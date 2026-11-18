@@ -6,3 +6,5 @@ elif [[ $((RANDOM % 3)) -ge 1 ]]; then
 else
     echo "scissors"
 fi
+
+
