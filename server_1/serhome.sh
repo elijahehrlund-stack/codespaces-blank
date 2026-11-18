@@ -1,4 +1,5 @@
 server_home () {
+    echo ""
     echo "___________________________________________________________"
     echo "***************** WELCOME TO SERVER HOME ******************"
     echo "==========================================================="
@@ -13,10 +14,12 @@ server_home () {
 }
 
 firewall () {
+    echo ""
     echo "Proceeding to firewall boot."
 }
 
 server_data () {
+    echo ""
     echo "Completing internal server scan, please wait."
     sudo nmap -v -sT -O 127.0.0.1 23
     sudo dmidecode -t system
@@ -24,14 +27,17 @@ server_data () {
 }
 
 chat () {
+    echo ""
     echo "Proceeding to chatme."
 }
 
 rock () {
+    echo ""
     echo "Proceeding to rock paper scissors." 
 }
 
 exit_s () {
+    echo ""
     echo "Exiting..." 
 }
 
@@ -42,7 +48,7 @@ while true; do
 		1) firewall ; ./firewall_boot.sh ;;
 		2) server_data ;;
         3) chat ; ./chat_me_start.sh ;;
-        4) rock ;;
+        4) rock ; ./rock_paper_scissors.sh ;;
         5) exit_s ; exit 0 ;; 
         0) echo "how did you get this..." ;;
 		*) echo "error" ;;
