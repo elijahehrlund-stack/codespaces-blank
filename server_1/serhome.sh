@@ -1,5 +1,4 @@
-server_home () {
-    clear 
+server_home () { 
     echo ""
     echo "___________________________________________________________"
     echo "***************** WELCOME TO SERVER HOME ******************"
@@ -9,9 +8,10 @@ server_home () {
     echo "3. Proceed to chatme (server communication)."
     echo "4. Proceed to rock paper scissors."
     echo "5. Exit server." 
+    echo "6. Clear."
     echo "___________________________________________________________"
     echo "==========================================================="
-    echo             "Please choose option [1-5]:..."
+    echo             "Please choose option [1-6]:..."
 }
 
 firewall () {
@@ -42,6 +42,10 @@ exit_s () {
     echo "Exiting..." 
 }
 
+clear_1 () {
+    echo "Clearing..." 
+    
+}
 while true; do
 	server_home
 	read choice 
@@ -51,6 +55,7 @@ while true; do
         3) chat ; clear ; ./chat_me_start.sh ;;
         4) rock ; clear ; ./rock_paper_scissors.sh ;;
         5) exit_s ; clear ; exit 0 ;; 
+        6) clear_1 ; sleep 1 ; clear ;;
         0) echo "how did you get this..." ;;
 		*) echo "error" ;;
 		 
