@@ -35,7 +35,7 @@ while true; do
 	case $choice in
 		1) rules ;;
 		2) stop_server ; clear ; exit ;;
-        3) connect ; nc -l 127.0.0.1 23 ;;
+        3) connect ; sudo nc -l 127.0.0.1 23 ;;
 		*) echo "error" ;;
 		 
 		
