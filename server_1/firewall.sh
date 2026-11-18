@@ -113,7 +113,7 @@ while true; do
 		4) add_rule ;;
 		5) remove_rule ;;
 		6) view_rules ;;
-		7) echo "exiting.."; exit 0 ;;
+		7) echo "exiting.."; clear ; exit 0 ;;
 		8) secure_firewall ;;
 		9) when_secure ;;
 	esac 

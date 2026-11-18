@@ -7,12 +7,8 @@ start_boot () {
     echo "Welcome to chatme server!.. Please choose a starting option." 
     echo "============================================================"
     echo "============================================================"
-    echo "============================================================"
-    echo "============================================================"
     echo "y. This will start the chatme server."
     echo "n. This will close the chatme server." 
-    echo "============================================================"
-    echo "============================================================"
     echo "============================================================"
     echo "============================================================"
 }
@@ -35,7 +31,7 @@ while true; do
 	read choice 
 	case $choice in
 		y) start_server ; ./chatme_server.sh ;;
-		n) stop_server ; exit ;;
+		n) stop_server ; clear ; exit ;;
 		*) echo "error" ;;
 		 
 		

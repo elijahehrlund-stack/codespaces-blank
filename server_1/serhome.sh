@@ -49,7 +49,7 @@ while true; do
 		2) server_data ;;
         3) chat ; ./chat_me_start.sh ;;
         4) rock ; ./rock_paper_scissors.sh ;;
-        5) exit_s ; exit 0 ;; 
+        5) exit_s ; clear ; exit 0 ;; 
         0) echo "how did you get this..." ;;
 		*) echo "error" ;;
 		 

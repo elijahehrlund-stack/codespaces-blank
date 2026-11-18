@@ -20,7 +20,7 @@ while true; do
 	read choice 
 	case $choice in
 		y) start_b ; ./firewall.sh ;;
-		n) stop_b ; exit ;;
+		n) stop_b ; clear ; exit ;;
 		*) echo "error" ;;
 		 
 		

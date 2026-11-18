@@ -34,7 +34,7 @@ while true; do
 	read choice 
 	case $choice in
 		1) rules ;;
-		2) stop_server ; exit ;;
+		2) stop_server ; clear ; exit ;;
         3) connect ; nc -l 127.0.0.1 23 ;;
 		*) echo "error" ;;
 		 

@@ -22,7 +22,7 @@ while true; do
 		rock) play ; ./rps.sh ;;
 		paper) play ; ./rps.sh ;;
         scissors) play ; ./rps.sh ;;
-		*) echo "Done." ; exit 0 ;;
+		*) echo "Done." ; clear ; exit 0 ;;
 		 
 		
 	esac 
