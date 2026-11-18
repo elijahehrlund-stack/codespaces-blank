@@ -1,0 +1,51 @@
+server_home () {
+    echo "___________________________________________________________"
+    echo "***************** WELCOME TO SERVER HOME ******************"
+    echo "==========================================================="
+    echo "1. Proceed to firewall systems. "
+    echo "2. Proceed to server data. "
+    echo "3. Proceed to chatme (server communication)."
+    echo "4. Proceed to rock paper scissors."
+    echo "5. Exit server." 
+    echo "___________________________________________________________"
+    echo "==========================================================="
+    echo   -n           "Please choose option [1-5]:..."
+}
+
+firewall () {
+    echo "Proceeding to firewall boot."
+}
+
+server_data () {
+    echo "Completing internal server scan, please wait."
+    sudo nmap -v -sT -O 127.0.0.1 23
+    sudo dmidecode -t system
+    sudo uname -a
+}
+
+chat () {
+    echo "Proceeding to chatme."
+}
+
+rock () {
+    echo "Proceeding to rock paper scissors." 
+}
+
+exit () {
+    echo "Exiting..." 
+}
+
+while true; do
+	server_home
+	read choice 
+	case $choice in
+		1) firewall ; ./firewall_boot.sh ;;
+		2) server_data ;;
+        3) chat ; ./chat_me_start.sh ;;
+        4) rock ;;
+        5) exit ; exit ;; 
+		*) echo "error" ;;
+		 
+		
+	esac 
+done
