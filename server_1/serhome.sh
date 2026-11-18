@@ -9,7 +9,7 @@ server_home () {
     echo "5. Exit server." 
     echo "___________________________________________________________"
     echo "==========================================================="
-    echo   -n           "Please choose option [1-5]:..."
+    echo             "Please choose option [1-5]:..."
 }
 
 firewall () {
@@ -31,7 +31,7 @@ rock () {
     echo "Proceeding to rock paper scissors." 
 }
 
-exit () {
+exit_s () {
     echo "Exiting..." 
 }
 
@@ -43,7 +43,8 @@ while true; do
 		2) server_data ;;
         3) chat ; ./chat_me_start.sh ;;
         4) rock ;;
-        5) exit ; exit ;; 
+        5) exit_s ; exit 0 ;; 
+        0) echo "how did you get this..." ;;
 		*) echo "error" ;;
 		 
 		
