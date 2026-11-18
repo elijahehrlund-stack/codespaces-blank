@@ -25,7 +25,7 @@ while true; do
 	options
 	read choice 
 	case $choice in
-		Y) play ; ./rpssecond.sh ;;
+		Y) play ; clear ; ./rpssecond.sh ;;
 		N) quit ; clear ; exit 0 ;;
 		*) echo "error" ;;
 		 

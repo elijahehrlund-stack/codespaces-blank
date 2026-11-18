@@ -19,7 +19,7 @@ while true; do
 	start_boot
 	read choice 
 	case $choice in
-		y) start_b ; ./firewall.sh ;;
+		y) start_b ; clear; ./firewall.sh ;;
 		n) stop_b ; clear ; exit ;;
 		*) echo "error" ;;
 		 

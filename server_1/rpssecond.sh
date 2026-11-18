@@ -8,7 +8,7 @@ play () {
     echo "Rock."
     echo "Paper."
     echo "Scissors."
-    echo ""
+    echo "Exit (any key then enter)"
     echo ""
     echo ""
 
