@@ -19,9 +19,9 @@ while true; do
 	play
 	read choice 
 	case $choice in
-		rock) play ; ./rps.sh ;;
-		paper) play ; ./rps.sh ;;
-        scissors) play ; ./rps.sh ;;
+		rock) play ; clear ; ./rps.sh ;;
+		paper) play ; clear ; ./rps.sh ;;
+        scissors) play ; clear ; ./rps.sh ;;
 		*) echo "Done." ; clear ; exit 0 ;;
 		 
 		
